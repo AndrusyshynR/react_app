@@ -3,6 +3,7 @@ import Item from './Item';
 
 function List({
     posts,
+    likePost,
     addFavorite,
     removeFavorite,
     changePostStatus }) {
@@ -10,6 +11,7 @@ function List({
         <Item
             key={post.id}
             post={post}
+            likePost={likePost}
             addFavorite={addFavorite}
             removeFavorite={removeFavorite}
             changePostStatus={changePostStatus}
